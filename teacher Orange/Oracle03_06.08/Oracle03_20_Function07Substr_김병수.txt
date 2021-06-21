@@ -1,0 +1,25 @@
+## 문자열 선택 함수
+
+substr : 중간문자열 반환.
+	형식] substr(문자열,위치,길이)
+	ex ] select substr('Happyday',3,3) from dual; // ppy
+
+	SUBSTR
+	------
+	ppy
+
+instr : 문자열의 위치 반환.
+	형식] instr(문자열,문자열)
+	ex ] select instr('happyday','ppy') from dual; //3
+
+	INSTR('HAPPYDAY','PPY')
+	-----------------------
+                      		3
+
+replace : 문자열 치환
+	형식] replace(문자열,old문자열,new문자열 )
+	Ex ] select replace('happyday','ppy','qqy') from dual; // happyday
+	
+	REPLACE('HAPPYDA
+	----------------
+	haqqyday

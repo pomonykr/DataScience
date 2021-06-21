@@ -1,0 +1,40 @@
+select abs(-10) as "absChk01",(10) as "absChk02" from dual;
+
+select ceil(3.7) as "ceilChk01",(3.3) as "ceilChk02" from dual;
+
+select floor(3.7) as "floorChk01",(3.3) as "floorChk02" from dual;
+
+select round(3.7) as "roundChk01",(3.3) as "roundChk02" from dual;
+
+SQL> select abs(-10) as "absChk01",(10) as "absChk02" from dual;
+
+  absChk01   absChk02
+---------- ----------
+        10         10
+
+SQL> select abs(-10) as "absChk01",(10) as "absChk02" from dual;
+
+  absChk01   absChk02
+---------- ----------
+        10         10
+
+SQL>
+SQL> select ceil(3.7) as "ceilChk01",(3.3) as "ceilChk02" from dual;
+
+ ceilChk01  ceilChk02
+---------- ----------
+         4        3.3
+
+SQL>
+SQL> select floor(3.7) as "floorChk01",(3.3) as "floorChk02" from dual;
+
+floorChk01 floorChk02
+---------- ----------
+         3        3.3
+
+SQL>
+SQL> select round(3.7) as "roundChk01",(3.3) as "roundChk02" from dual;
+
+roundChk01 roundChk02
+---------- ----------
+         4        3.3

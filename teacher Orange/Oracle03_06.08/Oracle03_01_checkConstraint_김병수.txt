@@ -1,0 +1,27 @@
+SQL> create table sawon(sabun number(3),
+  2  saname varchar2(10),deptno number(3),
+  3  sajob varchar2(10),sapay number(10),
+  4  sahire date default sysdate,sasex varchar2(6),
+  5  samgr number(3));
+
+Table created.
+
+SQL> insert into sawon values(1, '홍길동', 10, '회장', 5000, '1980/01/01', '남자', null);
+
+1 row created.
+
+SQL> insert into sawon values(5, '이순라', 20, '사원', 1200, '1990/05/01', '여자', 3);
+
+1 row created.
+
+SQL> insert into sawon values(7, '놀기만', 20, '과장', 2300, '1996/06/01', '중성', 2);
+
+1 row created.
+
+SQL> select sasex from sawon;
+
+SASEX
+------------
+남자
+여자
+중성

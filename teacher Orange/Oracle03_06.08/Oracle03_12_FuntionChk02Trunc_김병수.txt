@@ -1,0 +1,24 @@
+Trunc : 짤림
+Trunc (실수형,자리수)
+자리수 : 
+    +_ 소수점 이하
+    0_ 정수자리
+    -_ 정수자리.
+
+SQL> select trunc(777.777,2) as "truncChk01" from dual;
+
+truncChk01
+----------
+    777.77
+
+SQL> select trunc(777.777,0) as "truncChk01" from dual;
+
+truncChk01
+----------
+       777
+
+SQL> select trunc(777.777,-2) as "truncChk01" from dual;
+
+truncChk01
+----------
+       700

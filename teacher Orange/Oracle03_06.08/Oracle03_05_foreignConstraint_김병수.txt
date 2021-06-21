@@ -1,0 +1,10 @@
+drop table sawon;
+
+create table sawon(sabun number(3),
+ saname varchar2(10),deptno number(3),
+ sajob varchar2(10),sapay number(10),
+ sahire date,sasex varchar2(6),
+ samgr number(3),
+ constraint sawon_deptno_fk foreign key (deptno)
+ references dept(deptno)
+  );
