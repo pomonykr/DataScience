@@ -1,0 +1,7 @@
+create table dept(deptno number(3),dname varchar2(10),loc varchar(20));
+
+Table created.
+
+SQL> insert into dept(dname,loc) values('총무부','서울');
+
+1 row created.
