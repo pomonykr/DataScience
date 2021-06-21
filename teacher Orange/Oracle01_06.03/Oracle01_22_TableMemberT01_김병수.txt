@@ -1,0 +1,11 @@
+SQL> start c:\TableMember.sql;
+
+Table dropped.
+
+
+Table created.
+
+
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+MEMBERT01

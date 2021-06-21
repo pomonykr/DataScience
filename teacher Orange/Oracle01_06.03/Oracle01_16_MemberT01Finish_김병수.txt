@@ -1,0 +1,23 @@
+
+SQL> create user scott identified by happyday;
+
+User created.
+
+SQL> grant dba to scott;
+
+Grant succeeded.
+SQL> create table membert01(mem_id varchar2(15),mem_pwd varchar2(15));
+
+Table created.
+SQL> create table membert01(mem_name varchar2(20),
+mem_id varchar2(20),mempwd varchar2(20),
+mem_email varchar2(30),mem_phone varchar2(20),
+mem_addr varchar2(30));
+
+Table created.
+
+SQL> select * from tab;
+
+TNAME                                                        TABTYPE         CLUSTERID
+------------------------------------------------------------ -------------- ----------
+MEMBERT01
