@@ -1,0 +1,7 @@
+outer i = (1,2,3,4)
+inner i = (1,2,3,4)
+range(0,i)
+range(0,i)
+range(0,i)
+range(0,i)
+range(0,i)
