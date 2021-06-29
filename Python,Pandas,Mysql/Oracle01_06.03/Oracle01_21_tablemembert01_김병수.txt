@@ -1,0 +1,8 @@
+drop table membert01
+
+create table membert01(mem_name varchar2(20),
+mem_id varchar2(20),mempwd varchar2(20),
+mem_email varchar2(30),mem_phone varchar2(20),
+mem_addr varchar2(30));
+
+select * from table

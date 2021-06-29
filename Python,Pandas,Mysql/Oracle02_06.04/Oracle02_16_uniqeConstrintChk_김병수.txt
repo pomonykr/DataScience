@@ -1,0 +1,12 @@
+create table dept(
+deptno number(3) constraint dept_deptno_uq unique,
+dname varchar2(10),
+loc varchar2(10));
+
+insert into dept values(10,'총무부','서울');
+insert into dept values(10,'총무부1','서울1');
+
+Table created.
+
+ERROR at line 1:
+ORA-00001: unique constraint (SCOTT.DEPT_DEPTNO_UQ) violated

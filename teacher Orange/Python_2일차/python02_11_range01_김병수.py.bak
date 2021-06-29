@@ -1,4 +1,0 @@
-a = range(6,72)
-
-for mark in a:
-	print(mark)

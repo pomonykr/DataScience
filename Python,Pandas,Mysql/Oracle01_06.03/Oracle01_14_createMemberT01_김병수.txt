@@ -1,0 +1,41 @@
+
+SQL> create user scott identified by happyday;
+
+User created.
+
+SQL> grant dba to scott;
+
+Grant succeeded.
+SQL> create table membert01(mem_id varchar2(15),mem_pwd varchar2(15));
+
+Table created.
+
+SQL> desc membert01
+ Name                                                                                                              Null?    Type
+ ----------------------------------------------------------------------------------------------------------------- -------- ----------------------------------------------------------------------------
+ MEM_ID                                                                                                                     VARCHAR2(15)
+ MEM_PWD                                                                                                                    VARCHAR2(15)
+
+SQL> desc table;
+ERROR:
+ORA-00931: missing identifier
+
+
+SQL> select mem_id from member01
+  2  select mem_id from member01;
+select mem_id from member01
+*
+ERROR at line 2:
+ORA-00933: SQL command not properly ended
+
+
+SQL> select mem_id from member01;
+select mem_id from member01
+                   *
+ERROR at line 1:
+ORA-00942: table or view does not exist
+
+
+SQL> select mem_id from membert01;
+
+no rows selected

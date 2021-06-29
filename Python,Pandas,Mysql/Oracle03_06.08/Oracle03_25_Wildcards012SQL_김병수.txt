@@ -1,0 +1,65 @@
+Where customerName Like '_r%'
+
+_ 문자하나
+% 아무거나
+
+Ex ] sawon 테이블에서 saname 컬럼 마지막 이름이 '만'
+
+select saname
+from sawon
+where saname like '%만';
+
+SANAME
+--------------------
+놀기만
+공부만
+
+실습 1 ] sawon 테이블에서 김씨인 모든 사원 출력
+실습 2 ] sawon 테이블에서 두번째 글짜가 '미'인 모든 사원 출력
+실습 3 ] sawon 테이블에서 이름이 두글자인 고객 출력
+실습 4 ] sawon 테이블에서 '순' 자가 들어가는 모든 사원 출력
+실습 5 ] sawon 테이블에서 이름에서 마지막 글자가 '만'인 리스트 출력
+
+1] select saname
+ from sawon
+ where saname like '김%';
+
+SANAME
+--------------------
+김유신
+
+2]
+select saname
+ from sawon
+ where saname like '_미%';
+
+SANAME
+--------------------
+이미라
+
+3]
+select saname
+ from sawon
+ where saname like '__';
+
+no rows selected
+
+4]
+select saname
+ from sawon
+ where saname like '%순%';
+
+SANAME
+--------------------
+이순신
+이순라
+
+5]
+select saname
+ from sawon
+ where saname like '%만';
+
+SANAME
+--------------------
+놀기만
+공부만

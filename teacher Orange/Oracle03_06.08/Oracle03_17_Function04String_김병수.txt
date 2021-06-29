@@ -1,5 +1,0 @@
-concat : 문자열합 출력
-
-select concat('nice','day') from dual;
-
-select 'Nice' || 'day' || 'Not' || 'for' || 'You' as concat from dual;

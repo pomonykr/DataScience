@@ -1,0 +1,15 @@
+SQL> select '바보' from membert01;
+
+'바보'
+------------
+바보
+바보
+바보
+바보
+바보
+
+SQL> select 10+3 from dual;
+
+      10+3
+----------
+        13
